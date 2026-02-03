@@ -143,10 +143,20 @@ header{
 
 .btn:hover{ transform: translateY(-1px); }
 
-.btn-primary{
-  border: none;
-  background: var(--gold-grad);
-  color: #1b1b1b;
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    #27502c 0%,
+    #3f6f49 100%
+  );
+  border-radius: 999px;
+  padding: 12px 26px;
+  font-weight: 500;
+}
+
+.btn {
+  border-radius: 999px;
+   
 }
 
 .btn-primary:hover{
@@ -742,4 +752,26 @@ footer{
 .under-hero-head p {
   max-width: 640px;
   line-height: 1.7;
+}
+:root {
+  --green-soft: #eaf3ee;
+  --green-main: #27502c;
+  --gold-soft: #f3e7c3;
+  --text-main: #2a2a2a;
+  --text-muted: #6b6b6b;
+}
+
+body {
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-muted);
+}
+.hero-media img {
+  transition: transform 0.6s ease;
+}
+
+.hero-media img:hover {
+  transform: scale(1.03);
 }
