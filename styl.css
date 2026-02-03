@@ -1216,3 +1216,9 @@ p {
   .trust-years__num{ font-size: 56px; }
   .trust-years__text{ font-size: 22px; }
 }
+.process2-grid{
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+}
+.process2-step{
+  min-width: 0 !important;
+}
