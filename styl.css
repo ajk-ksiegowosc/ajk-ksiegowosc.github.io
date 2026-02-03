@@ -775,3 +775,107 @@ p {
 .hero-media img:hover {
   transform: scale(1.03);
 }
+
+/* Karty usług jak na inspiracji */
+.service-cards{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:28px;
+  margin-top:22px;
+}
+
+.service-card{
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 14px 40px rgba(0,0,0,.08);
+  transform:translateY(0);
+}
+
+.service-media{
+  position:relative;
+  height:200px;
+  overflow:hidden;
+}
+
+.service-media img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.service-badge{
+  position:absolute;
+  left:50%;
+  bottom:-26px;
+  transform:translateX(-50%);
+  width:76px;
+  height:76px;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);
+  border:1px solid rgba(255,255,255,.35);
+}
+
+.service-badge svg{
+  width:34px;
+  height:34px;
+  color:#fff;
+}
+
+.service-badge--green{
+  background:#27502c;
+}
+
+.service-badge--gold{
+  background: linear-gradient(135deg, #f0c56a 0%, #be9311 100%);
+}
+
+.service-body{
+  padding:44px 20px 20px; /* więcej miejsca przez ikonkę nachodzącą */
+  text-align:center;
+}
+
+.service-body h3{
+  margin:0 0 10px;
+  color:var(--green, #27502c);
+  font-size:20px;
+}
+
+.service-body p{
+  margin:0 0 12px;
+  line-height:1.7;
+}
+
+.service-link{
+  display:inline-block;
+  font-weight:600;
+  color:var(--green, #27502c);
+  text-decoration:none;
+}
+
+.service-link:hover{
+  text-decoration:underline;
+}
+
+/* ANIMACJA "POJAWIANIA SIĘ" */
+.reveal{
+  opacity:0;
+  transform: translateY(18px);
+  transition: opacity .6s ease, transform .6s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible{
+  opacity:1;
+  transform: translateY(0);
+}
+
+/* responsywność */
+@media (max-width: 980px){
+  .service-cards{ grid-template-columns:1fr; }
+  .service-media{ height:220px; }
+}
