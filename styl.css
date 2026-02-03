@@ -983,3 +983,90 @@ p {
 @media (max-width: 900px){
   .process-steps{ grid-template-columns: 1fr; }
 }
+/* Proces – wersja czysta, bez pionowej osi */
+.process2{
+  margin-top: 24px;
+}
+
+/* Delikatna linia z „punktami” nad krokami */
+.process2-top{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.process2-top span{
+  height: 2px;
+  background: linear-gradient(90deg, rgba(39,80,44,.22), rgba(190,147,17,.22));
+  border-radius: 99px;
+  position: relative;
+}
+
+.process2-top span::after{
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #f7f4ec;
+  border: 2px solid rgba(39,80,44,.28);
+}
+
+/* KROKI */
+.process2-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.process2-step{
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(39,80,44,.12);
+  border-radius: 18px;
+  padding: 16px 16px 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  min-width: 0; /* ważne: zapobiega dziwnym łamaniom */
+}
+
+.process2-num{
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: #1f3f25;
+  background: linear-gradient(135deg, #f3e7c3 0%, #eaf3ee 100%);
+  border: 1px solid rgba(39,80,44,.18);
+  box-shadow: 0 10px 18px rgba(0,0,0,.10);
+  margin-bottom: 10px;
+}
+
+.process2-step h4{
+  margin: 0 0 8px;
+  color: var(--green, #27502c);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.process2-step p{
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Responsywność */
+@media (max-width: 1100px){
+  .process2-grid{ grid-template-columns: repeat(2, 1fr); }
+  .process2-top{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 700px){
+  .process2-grid{ grid-template-columns: 1fr; }
+  .process2-top{ display:none; }
+}
