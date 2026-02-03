@@ -1331,3 +1331,7 @@ button, input, select, textarea{
 @media (max-width: 700px){
   .audience-grid{ grid-template-columns: 1fr; }
 }
+/* Ujednolicenie nagłówków sekcji */
+.section h2{
+  color: #27502c; /* ten sam zielony co reszta */
+}
