@@ -919,3 +919,67 @@ p {
 .service-badge{
   backdrop-filter: blur(6px);
 }
+/* Proces współpracy – wersja premium: oś */
+.process{
+  position: relative;
+  margin-top: 26px;
+  padding: 18px 0 6px;
+}
+
+.process-line{
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  bottom: 14px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(39,80,44,.25), rgba(190,147,17,.25));
+  border-radius: 99px;
+}
+
+.process-steps{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 28px;
+  padding-left: 28px;
+}
+
+.process-step{
+  position: relative;
+  padding: 16px 16px 14px 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.78);
+  border: 1px solid rgba(39,80,44,.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.process-dot{
+  position: absolute;
+  left: -34px;
+  top: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: #1f3f25;
+  background: linear-gradient(135deg, #f3e7c3 0%, #eaf3ee 100%);
+  border: 1px solid rgba(39,80,44,.18);
+  box-shadow: 0 10px 20px rgba(0,0,0,.10);
+}
+
+.process-step h4{
+  margin: 0 0 8px;
+  color: var(--green, #27502c);
+}
+
+.process-step p{
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* Mobile: jeden słupek */
+@media (max-width: 900px){
+  .process-steps{ grid-template-columns: 1fr; }
+}
