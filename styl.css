@@ -1242,3 +1242,92 @@ h1, h2, h3, h4, h5, h6{
 button, input, select, textarea{
   font-family: var(--font-sans) !important;
 }
+/* === Sekcja: Dla kogo (ładna prezentacja) === */
+.audience{
+  margin-top: 8px;
+}
+
+.audience-head{
+  max-width: 820px;
+}
+
+.eyebrow{
+  display:inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: .02em;
+  color: #27502c;
+  background: rgba(39,80,44,.10);
+  border: 1px solid rgba(39,80,44,.14);
+  margin: 0 0 14px;
+}
+
+.audience-head h2{
+  margin: 0 0 10px;
+  line-height: 1.15;
+}
+
+.audience-head .lead{
+  margin: 0;
+  opacity: .9;
+  line-height: 1.7;
+}
+
+.audience-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.audience-card{
+  background: rgba(255,255,255,.80);
+  border: 1px solid rgba(39,80,44,.12);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.06);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.audience-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.10);
+  border-color: rgba(190,147,17,.30);
+}
+
+.audience-icon{
+  display:inline-grid;
+  place-items:center;
+  height: 40px;
+  min-width: 56px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  color: #1f3f25;
+  background: linear-gradient(135deg, #f3e7c3 0%, #eaf3ee 100%);
+  border: 1px solid rgba(39,80,44,.18);
+  margin-bottom: 12px;
+}
+
+.audience-card h3{
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #27502c;
+}
+
+.audience-card p{
+  margin: 0;
+  line-height: 1.7;
+  opacity: .92;
+}
+
+/* RWD */
+@media (max-width: 1100px){
+  .audience-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px){
+  .audience-grid{ grid-template-columns: 1fr; }
+}
