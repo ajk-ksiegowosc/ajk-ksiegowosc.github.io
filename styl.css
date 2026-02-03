@@ -879,3 +879,43 @@ p {
   .service-cards{ grid-template-columns:1fr; }
   .service-media{ height:220px; }
 }
+/* --- FIX: badge/ikonka na kartach usług --- */
+
+/* dajemy miejsce na badge: zdjęcie kończy się wcześniej */
+.service-media{
+  height: 185px;            /* było 200px */
+  padding-bottom: 34px;     /* tworzy „pas” pod badge */
+  background: #ffffff;      /* żeby przejście było czyste */
+}
+
+/* obrazek ma zaokrąglony dół, żeby nie wyglądało jak ucięcie */
+.service-media img{
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/* badge siedzi idealnie na styku zdjęcia i treści */
+.service-badge{
+  bottom: 10px;               /* zamiast -26px */
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+
+  /* ten trik sprawia, że wygląda „osadzony” */
+  border: 8px solid #ffffff;  /* biały ring jak na inspiracji */
+  box-shadow: 0 14px 30px rgba(0,0,0,.16);
+}
+
+/* ikonka trochę większa i wycentrowana optycznie */
+.service-badge svg{
+  width: 32px;
+  height: 32px;
+}
+
+/* treść trochę wyżej (bo badge już ma miejsce) */
+.service-body{
+  padding-top: 26px;          /* było 44px */
+}
+.service-badge{
+  backdrop-filter: blur(6px);
+}
