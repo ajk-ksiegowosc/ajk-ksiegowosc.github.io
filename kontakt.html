@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt — AJK Usługi Księgowe</title>
+  <meta name="description" content="Kontakt do AJK Usługi Księgowe. Napisz i poproś o wycenę obsługi księgowej online." />
+  <link rel="stylesheet" href="styl.css" />
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="images/logo1.svg" alt="AJK logo" onerror="this.src='images/logo.jpg';" />
+        <div class="title">
+          <strong>AJK Usługi Księgowe</strong>
+          <span>Księgowość online w całej Polsce</span>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="oferta.html">Oferta</a>
+        <a href="cennik.html">Cennik</a>
+        <a href="o-mnie.html">O mnie</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn" href="kontakt.html">Bezpłatna konsultacja</a>
+        <a class="btn btn-primary" href="#formularz">Wyceń obsługę</a>
+        <button class="burger" type="button" data-burger aria-label="Otwórz menu">☰</button>
+      </div>
+    </nav>
+
+    <div class="mobile-panel" data-mobile-panel>
+      <a href="oferta.html">Oferta</a>
+      <a href="cennik.html">Cennik</a>
+      <a href="o-mnie.html">O mnie</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn btn-primary" style="margin:10px 10px 0;" href="#formularz">Wyceń obsługę</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="card wrap">
+        <div class="breadcrumb">Strona główna → Kontakt</div>
+        <h1>Kontakt</h1>
+        <p>Napisz kilka informacji — wrócę z odpowiedzią i wyceną obsługi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="two-col" id="formularz">
+        <div class="card content">
+          <h3>Formularz wyceny</h3>
+          <p class="note">
+            Formularz działa jako <strong>mailto</strong> (bez serwera) — po kliknięciu otworzy Twój program pocztowy.
+            W pliku <strong>script.js</strong> wpisz swój e-mail (linia z <code>const to =</code>).
+          </p>
+
+          <form data-contact-form>
+            <div class="form-row">
+              <div>
+                <label>Imię i nazwisko / nazwa firmy</label>
+                <input name="name" placeholder="np. Anna Kowalska / Kowalski Consulting" required />
+              </div>
+              <div>
+                <label>E-mail</label>
+                <input name="email" type="email" placeholder="np. anna@firma.pl" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div>
+                <label>Telefon (opcjonalnie)</label>
+                <input name="phone" placeholder="+48 000 000 000" />
+              </div>
+              <div>
+                <label>Temat</label>
+                <select name="topic">
+                  <option>Wycena obsługi</option>
+                  <option>JDG</option>
+                  <option>Spółka z o.o.</option>
+                  <option>Freelancer / B2B</option>
+                  <option>Inne</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label>Wiadomość</label>
+              <textarea name="message" placeholder="Napisz proszę: forma działalności, czy jesteś VAT, ile dokumentów/mies. oraz czego potrzebujesz." required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Wyślij zapytanie</button>
+            <p class="note">Jeśli wolisz, możesz też napisać bezpośrednio na e-mail poniżej.</p>
+          </form>
+        </div>
+
+        <div class="card content">
+          <h3>Dane kontaktowe</h3>
+          <p><strong>E-mail:</strong> twojemail@domena.pl</p>
+          <p><strong>Telefon:</strong> +48 000 000 000</p>
+          <p><strong>Godziny:</strong> Pn–Pt 9:00–17:00</p>
+
+          <div class="card" style="margin-top:14px; padding:16px; background:rgba(39,80,44,0.04); border:1px solid var(--border); border-radius: var(--radius-sm);">
+            <p class="small" style="margin:0;">
+              Obsługuję klientów <strong>online w całej Polsce</strong>. Dokumenty możesz przekazywać elektronicznie — szybko i wygodnie.
+            </p>
+          </div>
+
+          <div class="card hero-media" style="margin-top:14px;">
+            <img src="images/hero.jpg" alt="Kontakt — AJK Usługi Księgowe" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-title">AJK Usługi Księgowe</p>
+        <p class="small">Księgowość online dla JDG, sp. z o.o. i freelancerów.</p>
+      </div>
+      <div class="footer-links">
+        <p class="footer-title">Menu</p>
+        <a href="index.html">Start</a>
+        <a href="oferta.html">Oferta</a>
+        <a href="cennik.html">Cennik</a>
+        <a href="o-mnie.html">O mnie</a>
+      </div>
+      <div>
+        <p class="footer-title">Kontakt</p>
+        <p class="small">E-mail: <strong>twojemail@domena.pl</strong></p>
+        <p class="small">Telefon: <strong>+48 000 000 000</strong></p>
+      </div>
+    </div>
+
+    <div class="copy">
+      <span>© <span data-year></span> AJK Usługi Księgowe</span>
+      <span>ajk-ksiegowosc.pl</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
