@@ -1222,3 +1222,23 @@ p {
 .process2-step{
   min-width: 0 !important;
 }
+/* === GLOBAL FONT FIX (ujednolicenie czcionek) === */
+:root{
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --font-heading: var(--font-sans); /* możesz później podmienić nagłówki na inną */
+}
+
+html, body{
+  font-family: var(--font-sans) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-heading) !important;
+}
+
+button, input, select, textarea{
+  font-family: var(--font-sans) !important;
+}
