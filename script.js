@@ -77,3 +77,42 @@
 
   els.forEach(el => io.observe(el));
 })();
+// Parallax dla sekcji "zaufanie"
+(() => {
+  const blocks = document.querySelectorAll("[data-parallax]");
+  if (!blocks.length) return;
+
+  const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
+
+  let ticking = false;
+
+  const update = () => {
+    ticking = false;
+    blocks.forEach(block => {
+      const rect = block.parentElement.getBoundingClientRect();
+      const vh = window.innerHeight || 800;
+
+      // jeśli poza widokiem, nie ruszamy
+      if (rect.bottom < 0 || rect.top > vh) return;
+
+      // progres 0..1 w obrębie widoku
+      const progress = (vh - rect.top) / (vh + rect.height);
+      const p = clamp(progress, 0, 1);
+
+      // ruch tła: -18px..18px
+      const offset = (p - 0.5) * 36;
+      block.style.transform = `translateY(${offset}px)`;
+    });
+  };
+
+  const onScroll = () => {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(update);
+    }
+  };
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("resize", onScroll);
+  onScroll();
+})();
