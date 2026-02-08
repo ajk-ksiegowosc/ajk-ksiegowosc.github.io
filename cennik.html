@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cennik — AJK Usługi Księgowe</title>
-  <meta name="description" content="Cennik usług księgowych online. Pakiety dla JDG, freelancerów i spółek z o.o. Przejrzyste warunki współpracy." />
+  <meta name="description" content="Cennik usług AJK Usługi Księgowe: księgowość uproszczona, pełna księgowość, kadry i płace oraz usługi dodatkowe." />
   <link rel="stylesheet" href="styl.css" />
 </head>
 <body>
@@ -13,17 +13,17 @@
   <div class="container">
     <nav class="nav">
       <a class="brand" href="index.html">
-        <img src="images/logo1.svg" alt="AJK logo" onerror="this.src='images/logo.jpg';" />
+        <img src="images/logo1.svg" alt="AJK Usługi Księgowe logo" onerror="this.src='images/logo.jpg';" />
         <div class="title">
           <strong>AJK Usługi Księgowe</strong>
           <span>Księgowość online w całej Polsce</span>
         </div>
       </a>
 
-      <div class="nav-links">
-        <a href="o-mnie.html">O mnie</a>  
+      <div class="nav-links" aria-label="Główna nawigacja">
+        <a href="o-mnie.html">O mnie</a>
         <a href="oferta.html">Oferta</a>
-        <a href="cennik.html">Cennik</a>
+        <a href="cennik.html" aria-current="page">Cennik</a>
         <a href="kontakt.html">Kontakt</a>
       </div>
 
@@ -35,9 +35,9 @@
     </nav>
 
     <div class="mobile-panel" data-mobile-panel>
-      <a href="o-mnie.html">O mnie</a>    
+      <a href="o-mnie.html">O mnie</a>
       <a href="oferta.html">Oferta</a>
-      <a href="cennik.html">Cennik</a>
+      <a href="cennik.html" aria-current="page">Cennik</a>
       <a href="kontakt.html">Kontakt</a>
       <a class="btn btn-primary" style="margin:10px 10px 0;" href="kontakt.html#formularz">Wyceń obsługę</a>
     </div>
@@ -45,77 +45,228 @@
 </header>
 
 <main>
-  <section class="page-hero">
-    <div class="container">
-      <div class="card wrap">
-        <div class="breadcrumb">Strona główna → Cennik</div>
-        <h1>Cennik</h1>
-        <p>Pakiety są orientacyjne. Finalna cena zależy m.in. od liczby dokumentów i zakresu obowiązków.</p>
-      </div>
-    </div>
-  </section>
-
+  <!-- HERO CENNIK -->
   <section class="section">
     <div class="container">
-      <div class="pricing">
-        <div class="card price">
-          <h3>Start</h3>
-          <p class="from">JDG / freelancer</p>
-          <div class="value">od 299 zł / mies.</div>
-          <ul>
-            <li>podstawowa ewidencja</li>
-            <li>rozliczenia miesięczne</li>
-            <li>kontakt mailowy</li>
-          </ul>
-          <div class="actions">
+      <div class="pricing-hero">
+        <div>
+          <p class="eyebrow">Cennik usług</p>
+          <h1 class="page-title">Proste zasady, jasne widełki</h1>
+          <p class="lead">
+            Ceny zależą głównie od liczby dokumentów i zakresu obsługi. Jeśli masz niestandardową sytuację — przygotuję wycenę indywidualną.
+          </p>
+
+          <div class="pricing-hero-cta">
             <a class="btn btn-primary" href="kontakt.html#formularz">Zapytaj o wycenę</a>
+            <a class="btn" href="oferta.html">Zobacz zakres usług</a>
           </div>
         </div>
 
-        <div class="card price featured">
-          <div class="badge">Najlepszy wybór</div>
-          <h3>Komfort</h3>
-          <p class="from">JDG / firma rosnąca</p>
-          <div class="value">od 449 zł / mies.</div>
-          <ul>
-            <li>pełniejszy zakres + VAT (jeśli dotyczy)</li>
-            <li>uporządkowanie dokumentów</li>
-            <li>szybszy kontakt i wsparcie</li>
+        <div class="pricing-note">
+          <p class="pricing-note-title">Ważne</p>
+          <ul class="pricing-bullets">
+            <li>Właściciel JDG (kadry i płace) — <strong>gratis</strong>.</li>
+            <li>Usługi w święta i dni wolne — <strong>+100% ceny podstawowej</strong>.</li>
+            <li>Powyżej wskazanych progów — <strong>wycena indywidualna</strong>.</li>
           </ul>
-          <div class="actions">
-            <a class="btn btn-primary" href="kontakt.html#formularz">Dopasuj pakiet</a>
-            <a class="btn" href="oferta.html">Zakres usług</a>
-          </div>
         </div>
-
-        <div class="card price">
-          <h3>Spółka z o.o.</h3>
-          <p class="from">pełna księgowość</p>
-          <div class="value">od 899 zł / mies.</div>
-          <ul>
-            <li>księgi rachunkowe</li>
-            <li>ewidencje i rozliczenia</li>
-            <li>wsparcie formalne</li>
-          </ul>
-          <div class="actions">
-            <a class="btn btn-primary" href="kontakt.html#formularz">Sprawdź wycenę</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card content" style="margin-top:16px;">
-        <h3>Co wpływa na cenę?</h3>
-        <ul>
-          <li>liczba dokumentów miesięcznie (faktury, koszty)</li>
-          <li>VAT / transakcje zagraniczne</li>
-          <li>liczba pracowników / umów</li>
-          <li>nietypowe zdarzenia (np. środki trwałe)</li>
-        </ul>
-        <p class="note">Napisz do mnie — przygotuję wycenę dopasowaną do Twojej firmy.</p>
-        <a class="btn btn-primary" href="kontakt.html#formularz">Poproś o wycenę</a>
       </div>
     </div>
   </section>
+
+  <!-- KSIĘGOWOŚĆ UPROSZCZONA -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Księgowość uproszczona</h2>
+          <p>Ryczałt ewidencjonowany / KPiR — cena zależna od liczby dokumentów w miesiącu.</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-table-wrap">
+          <table class="pricing-table" aria-label="Cennik księgowości uproszczonej">
+            <thead>
+              <tr>
+                <th>Liczba dokumentów</th>
+                <th style="text-align:right;">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>od 1 do 5 dokumentów</td><td style="text-align:right;"><strong>200 zł</strong></td></tr>
+              <tr><td>od 6 do 15 dokumentów</td><td style="text-align:right;"><strong>300 zł</strong></td></tr>
+              <tr><td>od 16 do 30 dokumentów</td><td style="text-align:right;"><strong>450 zł</strong></td></tr>
+              <tr><td>od 31 do 50 dokumentów</td><td style="text-align:right;"><strong>600 zł</strong></td></tr>
+              <tr><td>od 51 do 70 dokumentów</td><td style="text-align:right;"><strong>700 zł</strong></td></tr>
+              <tr><td>od 71 do 90 dokumentów</td><td style="text-align:right;"><strong>800 zł</strong></td></tr>
+              <tr class="muted-row"><td>powyżej 90 dokumentów</td><td style="text-align:right;"><strong>wycena indywidualna</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pricing-small-note">
+          <span class="dot"></span>
+          <p>Jeśli liczba dokumentów mocno się zmienia w miesiącach — dopasujemy wariant do średniej.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KSIĘGOWOŚĆ PEŁNA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Księgowość pełna</h2>
+          <p>Dla spółek i firm wymagających pełnej księgowości — cena zależna od liczby dokumentów.</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <div class="pricing-table-wrap">
+          <table class="pricing-table" aria-label="Cennik księgowości pełnej">
+            <thead>
+              <tr>
+                <th>Liczba dokumentów</th>
+                <th style="text-align:right;">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>do 15 dokumentów</td><td style="text-align:right;"><strong>750 zł</strong></td></tr>
+              <tr><td>od 16 do 30 dokumentów</td><td style="text-align:right;"><strong>950 zł</strong></td></tr>
+              <tr><td>od 31 do 50 dokumentów</td><td style="text-align:right;"><strong>1200 zł</strong></td></tr>
+              <tr><td>od 51 do 70 dokumentów</td><td style="text-align:right;"><strong>1350 zł</strong></td></tr>
+              <tr><td>od 71 do 90 dokumentów</td><td style="text-align:right;"><strong>1500 zł</strong></td></tr>
+              <tr><td>od 91 do 120 dokumentów</td><td style="text-align:right;"><strong>1800 zł</strong></td></tr>
+              <tr class="muted-row"><td>powyżej 120 dokumentów</td><td style="text-align:right;"><strong>wycena indywidualna</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pricing-small-note">
+          <span class="dot"></span>
+          <p><strong>Wyciąg bankowy w PLN (10 transakcji):</strong> w pliku cennika brak kwoty — ustawiam jako <em>wycena indywidualna</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KADRY I PŁACE -->
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Kadry i płace</h2>
+          <p>Obsługa właściciela JDG gratis, a reszta wg stawek poniżej.</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <div class="list-grid">
+          <div class="list-item">
+            <div class="li-title">Właściciel jednoosobowej działalności</div>
+            <div class="li-price">gratis</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Obsługa kadrowo-płacowa za 1 osobę</div>
+            <div class="li-price">60 zł / osoba</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Rejestracja PFRON</div>
+            <div class="li-price">120 zł</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">PIT-11 (raz w roku) za 1 osobę</div>
+            <div class="li-price">40 zł / osoba</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Zaświadczenia pracownicze</div>
+            <div class="li-price">40 zł / szt.</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Jednorazowe wystawienie umowy (o pracę / zlecenie / dzieło)</div>
+            <div class="li-price">70 zł / szt.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DODATKOWE USŁUGI -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>Dodatkowe usługi</h2>
+          <p>Dodatkowe czynności i wsparcie — przejrzyście, bez ukrytych kosztów.</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <div class="list-grid">
+          <div class="list-item">
+            <div class="li-title">Pomoc w założeniu działalności gospodarczej</div>
+            <div class="li-price">gratis (przy nawiązaniu współpracy)</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Roczne zeznanie podatkowe właściciela (na podstawie danych z ksiąg biura)</div>
+            <div class="li-price">gratis</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Roczne zeznanie właściciela (dodatkowe dokumenty, dochody małżonka, ulgi, odliczenia)</div>
+            <div class="li-price">50 zł</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Roczne zeznanie dla klientów bez działalności gospodarczej</div>
+            <div class="li-price">50 zł</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Sporządzanie polityki rachunkowości</div>
+            <div class="li-price">500 zł</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Sprawozdania do GUS</div>
+            <div class="li-price">100 zł / szt.</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Korekta deklaracji VAT (z winy klienta)</div>
+            <div class="li-price">500 zł</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Weryfikacja ksiąg prowadzonych przez osoby trzecie</div>
+            <div class="li-price">100 zł / h</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Dodatkowo RZiS i Bilans (na życzenie klienta)</div>
+            <div class="li-price">350 zł</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Usługi w święta i dni wolne (na życzenie klienta)</div>
+            <div class="li-price">+100% ceny podstawowej</div>
+          </div>
+          <div class="list-item">
+            <div class="li-title">Wezwanie do zapłaty</div>
+            <div class="li-price">25 zł / szt.</div>
+          </div>
+
+          <div class="list-item muted">
+            <div class="li-title">Sporządzenie sprawozdania finansowego</div>
+            <div class="li-price">wycena indywidualna</div>
+          </div>
+        </div>
+
+        <div class="cta-strip">
+          <div>
+            <p class="cta-strip-title">Nie wiesz, który wariant pasuje?</p>
+            <p class="cta-strip-text">Napisz, ile masz dokumentów miesięcznie i jaką formę działalności prowadzisz — wrócę z konkretną wyceną.</p>
+          </div>
+          <a class="btn btn-primary" href="kontakt.html#formularz">Zapytaj o wycenę</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -123,25 +274,28 @@
     <div class="footer-grid">
       <div>
         <p class="footer-title">AJK Usługi Księgowe</p>
-        <p class="small">Przejrzyste ceny i jasna komunikacja.</p>
+        <p class="small">Księgowość online dla JDG, sp. z o.o. i freelancerów z całej Polski.</p>
       </div>
+
       <div class="footer-links">
         <p class="footer-title">Menu</p>
-        <a href="index.html">Start</a>
         <a href="oferta.html">Oferta</a>
+        <a href="cennik.html">Cennik</a>
         <a href="o-mnie.html">O mnie</a>
         <a href="kontakt.html">Kontakt</a>
       </div>
+
       <div>
         <p class="footer-title">Kontakt</p>
         <p class="small">E-mail: <strong>twojemail@domena.pl</strong></p>
         <p class="small">Telefon: <strong>+48 000 000 000</strong></p>
+        <p class="small">Godziny: <strong>Pn–Pt 9:00–17:00</strong></p>
       </div>
     </div>
 
     <div class="copy">
       <span>© <span data-year></span> AJK Usługi Księgowe</span>
-      <span>ajk-ksiegowosc.pl</span>
+      <span>Wszelkie prawa zastrzeżone</span>
     </div>
   </div>
 </footer>
