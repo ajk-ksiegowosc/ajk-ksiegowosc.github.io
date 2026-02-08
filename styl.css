@@ -1565,3 +1565,46 @@ button, input, select, textarea{
   .about-media img{ height: 320px; }
   .about-grid2{ grid-template-columns: 1fr; }
 }
+/* === O MNIE – TYPOGRAFIA === */
+
+.about-quote,
+.about-points{
+  font-family: inherit;
+}
+
+/* cytat */
+.about-quote .quote{
+  font-size: 17px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #1f1f1f;
+}
+
+.about-quote .quote-name{
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 14px;
+  color: #27502c;
+}
+
+/* nagłówek po prawej */
+.about-points h2{
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #27502c;
+}
+
+/* lista punktów */
+.about-points ul,
+.about-points li{
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #2a2a2a;
+}
+
+/* znaczniki listy */
+.about-points li::marker{
+  color: #be9311;
+}
