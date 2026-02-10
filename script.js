@@ -116,3 +116,20 @@
   window.addEventListener("resize", onScroll);
   onScroll();
 })();
+// === PARALLAX – O MNIE ===
+(() => {
+  const photo = document.querySelector('.parallax-photo');
+  if (!photo) return;
+
+  const strength = 0.18; // im mniejsza wartość, tym subtelniej
+
+  window.addEventListener('scroll', () => {
+    const rect = photo.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.bottom < 0 || rect.top > windowHeight) return;
+
+    const progress = (rect.top - windowHeight) * strength;
+    photo.style.transform = `translateY(${progress}px)`;
+  });
+})();
