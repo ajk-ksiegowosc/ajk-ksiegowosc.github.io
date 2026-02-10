@@ -1749,3 +1749,16 @@ button, input, select, textarea{
     object-position: 50% 12%;
   }
 }
+/* === SUBTELNY PARALLAX – O MNIE === */
+
+.parallax-photo{
+  will-change: transform;
+  transition: transform 0.1s linear;
+}
+
+/* na mobile wyłączamy parallax (czytelność i wydajność) */
+@media (max-width: 900px){
+  .parallax-photo{
+    transform: none !important;
+  }
+}
