@@ -1861,3 +1861,8 @@ button, input, select, textarea{
 @media (max-width: 700px){
   .about-photo{ height: 420px; }
 }
+@media (max-width: 768px){
+  .process2-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
