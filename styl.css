@@ -1798,3 +1798,38 @@ button, input, select, textarea{
     max-height:420px;
   }
 }
+/* === FIX: O MNIE – ZDJĘCIE (NA PEWNO ZADZIAŁA) === */
+
+.about-hero .about-media{
+  padding: 22px !important;
+  border-radius: 28px !important;
+  overflow: hidden !important;
+  background: rgba(255,255,255,.65) !important;
+  box-shadow: 0 22px 50px rgba(0,0,0,.12) !important;
+}
+
+.about-hero .about-media .about-photo{
+  width: 100% !important;
+  height: 520px !important;          /* to zmienia „oddalenie” */
+  object-fit: contain !important;     /* pokazuje całe zdjęcie */
+  object-position: center top !important;
+  display: block !important;
+  border-radius: 18px !important;
+}
+
+/* tablet */
+@media (max-width:1100px){
+  .about-hero .about-media .about-photo{
+    height: 460px !important;
+  }
+}
+
+/* telefon */
+@media (max-width:700px){
+  .about-hero .about-media{
+    padding: 14px !important;
+  }
+  .about-hero .about-media .about-photo{
+    height: 420px !important;
+  }
+}
