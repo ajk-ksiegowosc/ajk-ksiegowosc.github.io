@@ -2341,3 +2341,59 @@ button, input, select, textarea{
 .about-photo{
   width: 400px !important;
 }
+/* ===== MOBILE FIX — O MNIE ===== */
+@media (max-width: 768px){
+
+  .about-hero{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    align-items: start !important;
+  }
+
+  .about-copy{
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .about-copy h1{
+    font-size: 34px !important;
+    line-height: 1.1 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .about-lead,
+  .about-text p{
+    max-width: 100% !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+  }
+
+  .about-media{
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .about-photo{
+    width: min(82vw, 320px) !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .about-cta{
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+  }
+
+  .about-cta .btn{
+    width: 100% !important;
+    justify-content: center !important;
+  }
+}
