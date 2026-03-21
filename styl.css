@@ -2445,3 +2445,103 @@ button, input, select, textarea{
     grid-template-columns: 1fr;
   }
 }
+/* ===== CENNIK — NOWA WERSJA ===== */
+.page-title{
+  margin: 0;
+  color: #27502c;
+}
+
+.pricing-title{
+  margin: 42px 0 18px;
+  color: #27502c;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.pricing-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.price-box{
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(39,80,44,.12);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.06);
+}
+
+.price-box h3{
+  margin: 0 0 10px;
+  color: #27502c;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.plan{
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(39,80,44,.08);
+  border: 1px solid rgba(39,80,44,.12);
+  color: #27502c;
+  font-weight: 700;
+}
+
+.price-list{
+  display: grid;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.price-list div{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(39,80,44,.08);
+}
+
+.price-list strong{
+  color: #27502c;
+  font-size: 18px;
+}
+
+.included-title{
+  margin: 0 0 10px;
+  font-weight: 700;
+  color: #27502c;
+}
+
+.price-box ul{
+  margin: 0;
+  padding-left: 20px;
+}
+
+.price-box li{
+  margin: 8px 0;
+  line-height: 1.7;
+  color: #5b6a60;
+}
+
+.single-box{
+  max-width: 860px;
+}
+
+@media (max-width: 900px){
+  .pricing-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-title{
+    font-size: 26px;
+  }
+
+  .price-box h3{
+    font-size: 20px;
+  }
+}
