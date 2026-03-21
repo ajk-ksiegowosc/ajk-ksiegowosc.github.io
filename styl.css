@@ -2397,3 +2397,51 @@ button, input, select, textarea{
     justify-content: center !important;
   }
 }
+.pricing-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.price-box{
+  background: rgba(255,255,255,.8);
+  border: 1px solid rgba(39,80,44,.12);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.06);
+}
+
+.price-box h3{
+  margin-top: 0;
+  color: #27502c;
+}
+
+.plan{
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.price-list div{
+  display:flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.included-title{
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.price-box ul{
+  padding-left: 18px;
+  margin: 10px 0 0;
+}
+
+/* mobile */
+@media (max-width: 768px){
+  .pricing-grid{
+    grid-template-columns: 1fr;
+  }
+}
