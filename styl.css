@@ -2202,3 +2202,63 @@ button, input, select, textarea{
     max-width: 320px !important;
   }
 }
+/* ===== O MNIE — zdjęcie bez ramy i bez pustego tła ===== */
+
+.about-hero{
+  display: grid !important;
+  grid-template-columns: 1.15fr 0.85fr !important;
+  gap: 36px !important;
+  align-items: center !important;
+}
+
+.about-media{
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.about-media::before,
+.about-media::after{
+  display: none !important;
+  content: none !important;
+}
+
+.about-photo{
+  display: block !important;
+  width: 360px !important;     /* możesz zmienić np. na 380px */
+  max-width: 100% !important;
+  height: auto !important;
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 18px !important;
+  box-shadow: none !important;
+  object-fit: contain !important;
+}
+
+/* mobile */
+@media (max-width: 980px){
+  .about-hero{
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .about-media{
+    justify-content: center !important;
+  }
+
+  .about-photo{
+    width: 300px !important;
+  }
+}
