@@ -2318,3 +2318,26 @@ button, input, select, textarea{
     width: 300px !important;
   }
 }
+/* O mnie — lepszy balans tekstu i zdjęcia */
+.about-hero{
+  grid-template-columns: 1.05fr 0.95fr !important;
+  gap: 28px !important;
+}
+
+.about-copy{
+  max-width: 620px;
+}
+
+.about-lead{
+  font-size: 19px;
+  line-height: 1.75;
+}
+
+.about-text p{
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.about-photo{
+  width: 420px !important;
+}
