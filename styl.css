@@ -1948,3 +1948,93 @@ button, input, select, textarea{
     line-height: 1.5 !important;
   }
 }
+/* =========================================
+   O MNIE — LEPSZA PREZENTACJA ZDJĘCIA
+   ========================================= */
+
+.about-hero{
+  display: grid !important;
+  grid-template-columns: 1.12fr 0.88fr !important;
+  gap: 42px !important;
+  align-items: center !important;
+}
+
+.about-media{
+  position: relative !important;
+  padding: 0 !important;
+  background: linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.08)) !important;
+  border: 0 !important;
+  border-radius: 34px !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+  min-height: 640px !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: center !important;
+}
+
+/* miękkie tło za zdjęciem */
+.about-media::before{
+  content: "" !important;
+  position: absolute !important;
+  inset: 24px 24px 0 24px !important;
+  border-radius: 28px !important;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(190,147,17,0.16), transparent 35%),
+    radial-gradient(circle at 80% 10%, rgba(39,80,44,0.10), transparent 30%),
+    rgba(255,255,255,0.32) !important;
+  z-index: 0 !important;
+}
+
+/* samo zdjęcie */
+.about-photo{
+  position: relative !important;
+  z-index: 1 !important;
+  width: auto !important;
+  max-width: 92% !important;
+  height: 610px !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  display: block !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: 0 24px 55px rgba(0,0,0,0.16) !important;
+  transform: translateY(18px);
+}
+
+/* tablet */
+@media (max-width: 1100px){
+  .about-hero{
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .about-media{
+    min-height: 560px !important;
+  }
+
+  .about-photo{
+    height: 520px !important;
+    max-width: 88% !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* telefon */
+@media (max-width: 700px){
+  .about-media{
+    min-height: 440px !important;
+    border-radius: 24px !important;
+  }
+
+  .about-media::before{
+    inset: 14px 14px 0 14px !important;
+    border-radius: 20px !important;
+  }
+
+  .about-photo{
+    height: 410px !important;
+    max-width: 92% !important;
+    transform: translateY(10px);
+  }
+}
