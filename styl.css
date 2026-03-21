@@ -2099,3 +2099,53 @@ button, input, select, textarea{
     max-width: 340px !important;
   }
 }
+/* ===== O MNIE — ZDJĘCIE BEZ JAKICHKOLWIEK RAMEK ===== */
+
+.about-media{
+  padding: 0 !important;
+  margin: 0 !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+
+/* usuwa WSZYSTKIE dodatkowe warstwy (te jasne tła które widzisz) */
+.about-media::before,
+.about-media::after{
+  display: none !important;
+  content: none !important;
+}
+
+/* samo zdjęcie */
+.about-photo{
+  width: 100% !important;
+  max-width: 420px !important;   /* kontroluje wielkość */
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+
+  /* brak ramek */
+  border: none !important;
+  border-radius: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* wyrównanie po prawej */
+.about-media{
+  display: flex !important;
+  justify-content: flex-end !important;
+}
+
+/* mobile */
+@media (max-width: 980px){
+  .about-media{
+    justify-content: center !important;
+  }
+
+  .about-photo{
+    max-width: 320px !important;
+  }
+}
