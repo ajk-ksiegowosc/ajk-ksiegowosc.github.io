@@ -105,12 +105,21 @@
           <!-- po wysłaniu -->
           <input type="hidden" name="_redirect" value="https://ajk-ksiegowosc.pl/dziekuje.html" />
 
+          <div class="form-consent">
+            <label class="checkbox-label">
+              <input type="checkbox" name="consent" required />
+              <span>
+                Wysyłając formularz kontaktowy akceptujesz
+                <a href="klauzula.html" class="link" target="_blank" rel="noopener noreferrer">
+                  Klauzulę informacyjną
+                </a>.
+              </span>
+            </label>
+          </div>
+          
           <button class="btn btn-primary" type="submit">Wyślij wiadomość</button>
-
-          <p class="note">
-            Klikając „Wyślij”, zgadzasz się na kontakt w sprawie obsługi księgowej.<br>
-            Wysyłając formularz kontaktowy akceptujesz 
-            <a href="klauzula.html" class="link">Klauzulę informacyjną</a>.
+          <p class="form-legal">
+            Klikając „Wyślij”, zgadzasz się na kontakt w sprawie obsługi księgowej.
           </p>
         </form>
       </div>
