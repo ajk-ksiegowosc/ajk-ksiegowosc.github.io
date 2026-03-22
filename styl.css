@@ -2592,3 +2592,79 @@ button, input, select, textarea{
 .checkbox-label a:hover{
   opacity: .8;
 }
+/* ===== KLAUZULA INFORMACYJNA ===== */
+.legal-page{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.legal-page h1{
+  margin: 0 0 10px;
+  color: #27502c;
+  font-size: 40px;
+  line-height: 1.15;
+}
+
+.legal-subtitle{
+  margin: 0 0 22px;
+  font-weight: 700;
+  color: #27502c;
+}
+
+.legal-intro{
+  margin: 0 0 18px;
+  line-height: 1.8;
+  color: #5b6a60;
+}
+
+.legal-box{
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(39,80,44,.12);
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.06);
+}
+
+.legal-box h3{
+  color: #27502c;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.legal-box h3:first-child{
+  margin-top: 0;
+}
+
+.legal-box p{
+  color: #5b6a60;
+  line-height: 1.8;
+  margin: 0 0 14px;
+}
+
+.legal-box ul{
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.legal-box li{
+  color: #5b6a60;
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.legal-back{
+  margin-top: 22px;
+  display: inline-flex;
+}
+
+@media (max-width: 768px){
+  .legal-page h1{
+    font-size: 32px;
+  }
+
+  .legal-box{
+    padding: 18px;
+    border-radius: 18px;
+  }
+}
