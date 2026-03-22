@@ -3057,3 +3057,7 @@ footer{
     font-size: 34px !important;
   }
 }
+/* Mniejszy odstęp nad breadcrumbs na stronie O mnie */
+.breadcrumbs{
+  margin-bottom: 6px !important;
+}
