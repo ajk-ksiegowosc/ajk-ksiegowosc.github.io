@@ -2545,3 +2545,9 @@ button, input, select, textarea{
     font-size: 20px;
   }
 }
+/* UKRYCIE przycisku "Wyceń obsługę" na telefonie */
+@media (max-width: 768px){
+  .nav-cta .btn-primary{
+    display: none !important;
+  }
+}
