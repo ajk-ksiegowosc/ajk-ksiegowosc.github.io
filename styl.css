@@ -2551,3 +2551,12 @@ button, input, select, textarea{
     display: none !important;
   }
 }
+.link{
+  color: #27502c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.link:hover{
+  opacity: 0.7;
+}
