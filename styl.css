@@ -2668,3 +2668,368 @@ button, input, select, textarea{
     border-radius: 18px;
   }
 }
+/* =========================================
+   AJK — PACZKA CSS PREMIUM
+   wkleić na sam KONIEC styl.css
+   ========================================= */
+
+/* 1) Globalny rytm i typografia */
+body{
+  line-height: 1.7;
+}
+
+.section{
+  padding: 64px 0 !important;
+}
+
+.section.alt{
+  padding: 72px 0 !important;
+}
+
+h1, h2, h3, h4{
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+p{
+  line-height: 1.8;
+}
+
+.section-head h2,
+.under-hero-head h2,
+.page-title,
+.about-copy h1{
+  margin-bottom: 14px !important;
+}
+
+.section-head p,
+.under-hero-head p,
+.about-lead,
+.about-text p,
+.content p{
+  max-width: 70ch;
+}
+
+/* 2) Kontener i większy porządek szerokości */
+.container{
+  width: min(1180px, calc(100% - 40px)) !important;
+}
+
+/* 3) Nagłówki sekcji */
+.section h1,
+.section h2{
+  color: #27502c;
+}
+
+/* 4) Bardziej eleganckie boxy */
+.feature,
+.price-box,
+.about-quote,
+.about-points,
+.pricing-card,
+.pricing-note,
+.content{
+  border-radius: 22px !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,.06) !important;
+  border: 1px solid rgba(39,80,44,.10) !important;
+  background: rgba(255,255,255,.76) !important;
+}
+
+/* 5) O mnie — lepszy balans */
+.about-hero{
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 420px !important;
+  gap: 42px !important;
+  align-items: center !important;
+}
+
+.about-copy{
+  max-width: 720px !important;
+}
+
+.about-copy h1{
+  font-size: clamp(40px, 5vw, 58px) !important;
+  margin-top: 0 !important;
+}
+
+.about-lead{
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  margin-bottom: 18px !important;
+}
+
+.about-text p{
+  font-size: 16px !important;
+  line-height: 1.9 !important;
+  margin-bottom: 12px !important;
+}
+
+.about-cta{
+  margin-top: 22px !important;
+}
+
+.about-media{
+  display: block !important;
+  width: fit-content !important;
+  max-width: 100% !important;
+  margin-left: auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.about-media::before,
+.about-media::after{
+  display: none !important;
+  content: none !important;
+}
+
+.about-photo{
+  width: 400px !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 22px !important;
+  box-shadow: 0 20px 45px rgba(0,0,0,.10) !important;
+  background: transparent !important;
+}
+
+/* 6) Oferta — ładniejsze kolumny */
+.content ul,
+.price-box ul{
+  padding-left: 22px;
+}
+
+.content li,
+.price-box li{
+  margin-bottom: 8px;
+  line-height: 1.75;
+}
+
+/* 7) Cennik */
+.pricing-title{
+  font-size: clamp(28px, 4vw, 38px) !important;
+  margin: 48px 0 18px !important;
+}
+
+.price-box h3{
+  font-size: 22px !important;
+  line-height: 1.35 !important;
+}
+
+.plan{
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px !important;
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+}
+
+.price-list div{
+  padding: 12px 0 !important;
+}
+
+.price-list strong{
+  font-size: 18px !important;
+  color: #27502c !important;
+}
+
+/* 8) Klauzula i treści prawne */
+.legal-page{
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.legal-box{
+  border-radius: 22px !important;
+  background: rgba(255,255,255,.80) !important;
+  border: 1px solid rgba(39,80,44,.10) !important;
+  box-shadow: 0 12px 30px rgba(0,0,0,.06) !important;
+}
+
+/* 9) Footer — duża poprawa */
+footer{
+  margin-top: 56px !important;
+  padding: 42px 0 22px !important;
+  border-top: 1px solid rgba(39,80,44,.10) !important;
+  background: rgba(255,255,255,.14) !important;
+}
+
+.footer-grid{
+  display: grid !important;
+  grid-template-columns: 1.2fr .9fr 1fr !important;
+  gap: 28px !important;
+  align-items: start !important;
+}
+
+.footer-title{
+  font-size: 22px !important;
+  margin-bottom: 14px !important;
+  color: #27502c !important;
+}
+
+.footer-links a{
+  padding: 4px 0 !important;
+}
+
+.copy{
+  margin-top: 28px !important;
+  padding-top: 18px !important;
+  border-top: 1px solid rgba(39,80,44,.08) !important;
+}
+
+/* 10) Przyciskom dajemy spójność */
+.btn{
+  min-height: 46px;
+}
+
+.btn-primary{
+  box-shadow: 0 10px 26px rgba(39,80,44,.18);
+}
+
+/* 11) Mobile — uporządkowanie */
+@media (max-width: 980px){
+  .section{
+    padding: 52px 0 !important;
+  }
+
+  .section.alt{
+    padding: 58px 0 !important;
+  }
+
+  .about-hero{
+    grid-template-columns: 1fr !important;
+    gap: 26px !important;
+    align-items: start !important;
+  }
+
+  .about-copy{
+    max-width: 100% !important;
+  }
+
+  .about-media{
+    margin: 0 auto !important;
+  }
+
+  .about-photo{
+    width: min(82vw, 360px) !important;
+  }
+
+  .footer-grid{
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .copy{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+}
+
+@media (max-width: 768px){
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .container{
+    width: min(1180px, calc(100% - 24px)) !important;
+  }
+
+  .nav{
+    gap: 10px !important;
+  }
+
+  .brand{
+    min-width: 0 !important;
+    gap: 10px !important;
+    flex: 1 1 auto !important;
+  }
+
+  .brand img{
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .brand .title strong{
+    font-size: 12px !important;
+    line-height: 1.1 !important;
+  }
+
+  .brand .title span{
+    font-size: 11px !important;
+    line-height: 1.1 !important;
+  }
+
+  .nav-cta .btn-primary{
+    display: none !important;
+  }
+
+  .about-copy h1,
+  .page-title,
+  .section h1{
+    font-size: 34px !important;
+    line-height: 1.1 !important;
+  }
+
+  .about-lead,
+  .about-text p,
+  .content p,
+  .section-head p{
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    max-width: 100% !important;
+  }
+
+  .about-cta{
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .about-cta .btn{
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .pricing-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .process2-grid{
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .process2-step{
+    min-height: auto !important;
+    padding: 14px !important;
+  }
+
+  .process2-step h4{
+    font-size: 16px !important;
+  }
+
+  .process2-step p{
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media (max-width: 520px){
+  .process2-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .price-box,
+  .about-quote,
+  .about-points,
+  .content,
+  .legal-box{
+    padding: 18px !important;
+  }
+
+  .footer-title{
+    font-size: 20px !important;
+  }
+}
