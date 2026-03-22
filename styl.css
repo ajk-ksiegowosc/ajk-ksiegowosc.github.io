@@ -2560,3 +2560,35 @@ button, input, select, textarea{
 .link:hover{
   opacity: 0.7;
 }
+/* ===== Checkbox zgody pod formularzem ===== */
+.form-consent{
+  margin: 8px 0 4px;
+}
+
+.checkbox-label{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.checkbox-label input[type="checkbox"]{
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #27502c;
+  flex-shrink: 0;
+}
+
+.checkbox-label a{
+  color: #27502c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.checkbox-label a:hover{
+  opacity: .8;
+}
