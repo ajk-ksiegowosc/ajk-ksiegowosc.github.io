@@ -3033,3 +3033,15 @@ footer{
     font-size: 20px !important;
   }
 }
+/* O mnie — nagłówek jak na innych podstronach */
+.about-copy h1{
+  font-size: 48px !important;
+  line-height: 1.1 !important;
+  margin-bottom: 18px !important;
+}
+
+@media (max-width: 768px){
+  .about-copy h1{
+    font-size: 34px !important;
+  }
+}
