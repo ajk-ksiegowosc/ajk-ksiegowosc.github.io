@@ -3045,3 +3045,15 @@ footer{
     font-size: 34px !important;
   }
 }
+/* 🔥 FINAL FIX — nagłówek O MNIE */
+.about-hero h1{
+  font-size: 48px !important;
+  line-height: 1.1 !important;
+  margin-bottom: 18px !important;
+}
+
+@media (max-width: 768px){
+  .about-hero h1{
+    font-size: 34px !important;
+  }
+}
